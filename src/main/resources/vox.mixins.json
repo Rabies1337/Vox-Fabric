@@ -4,6 +4,7 @@
   "package": "dev.rabies.vox.mixins",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "MixinCamera",
     "MixinClientPlayerEntity",
     "MixinKeyboard",
     "MixinMinecraftClient",

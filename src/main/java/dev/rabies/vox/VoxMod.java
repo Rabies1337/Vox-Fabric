@@ -2,6 +2,7 @@ package dev.rabies.vox;
 
 import dev.rabies.vox.events.EventHandlers;
 import dev.rabies.vox.handlers.InputKeyHandler;
+import dev.rabies.vox.handlers.SendChatHandler;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,6 +25,7 @@ public class VoxMod extends FeatureLoader implements ModInitializer {
 
         // Register handlers
         EventHandlers.register(new InputKeyHandler());
+        EventHandlers.register(new SendChatHandler());
     }
 
     public static VoxMod getInstance() {
